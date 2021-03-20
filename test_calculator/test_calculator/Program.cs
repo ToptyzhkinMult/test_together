@@ -6,7 +6,32 @@ namespace test_calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int d = Addition(5, 3);
+            Console.WriteLine($"{d}");
+        }
+
+        static int Addition(int a, int b)
+        {
+            int c= a + b;
+            return c;
+        }
+
+        static int Substraction(int a, int b)
+        {
+            int c = a - b;
+            return c;
+        }
+
+        static int Multiplication(int a, int b)
+        {
+            int c = a * b;
+            return c;
+        }
+
+        static int Division(int a, int b)
+        {
+            int c = a / b;
+            return c;
         }
     }
 }
