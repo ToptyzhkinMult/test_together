@@ -4,38 +4,37 @@ namespace test_calculator
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            int d = Addition(5, 3);
-            Console.WriteLine($"{d}");
-        }
 
-        static int Addition(int a, int b)
+
+        static double Addition(double a, double b)
         {
-            int c= a + b;
+            double c= a + b;
             return c;
         }
 
-        static int Substraction(int a, int b)
+        static double Substraction(double a, double b)
         {
-            int c = a - b;
+            double c = a - b;
             return c;
         }
 
-        static int Multiplication(int a, int b)
+        static double Multiplication(double a, double b)
         {
-            int c = a * b;
+            double c = a * b;
             return c;
         }
 
-        static int Division(int a, int b)
+        static double Division(double a, double b)
         {
-            int c = a / b;
+            double c = a / b;
             return c;
-            Console.WriteLine("Введите первое число: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+        }
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Введите первое число: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите второе число: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Введите знак операции: + Сложение  - Вычитание  * Умножение / Деление" );
 
