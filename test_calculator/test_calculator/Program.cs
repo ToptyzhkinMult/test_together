@@ -8,7 +8,7 @@ namespace test_calculator
 
         static double Addition(double a, double b)
         {
-            double c= a + b;
+            double c = a + b;
             return c;
         }
 
@@ -29,33 +29,33 @@ namespace test_calculator
             double c = a / b;
             return c;
         }
-            static void Main(string[] args)
-            {
-                Console.WriteLine("Введите первое число: ");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите второе число: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите знак операции: + Сложение  - Вычитание  * Умножение / Деление" );
+            Console.WriteLine("Введите знак операции: + Сложение  - Вычитание  * Умножение / Деление");
 
             var operation = Console.ReadKey().KeyChar;
             double result = 0;
             switch (operation)
             {
                 case '+':
-                    result = num1 + num2;
+                    result = Addition(num1, num2);
                     Console.WriteLine($"Результат операции {result}");
                     break;
                 case '-':
-                    result = num1 - num2;
+                    result = Substraction(num1, num2);
                     Console.WriteLine($"Результат операции {result}");
                     break;
                 case '*':
-                    result = num1 * num2;
+                    result = Multiplication(num1, num2);
                     Console.WriteLine($"Результат операции {result}");
                     break;
                 case '/':
-                    result = num1 / num2;
+                    result = Division(num1, num2);
                     Console.WriteLine($"Результат операции {result}");
                     break;
                 default:
